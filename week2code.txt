@@ -1,0 +1,195 @@
+// C Homework Week 1 and 2.cpp : Defines the entry point for the console application.
+/*****************************************************************
+ *   Name:   Phil V		                                 *
+ *   Date:   September 8, 2015                                   *
+ *   Class:  90.211-001  Intro to Programming in C - Part 1      *
+ *                                                               *
+ *  Program Description:                                         *
+ *  Week 2 Homework                                              *
+ *  Week2A: Print Picture	                                 *
+ *  Week2B: Print Numbers 1-4                                    *
+ *  Week2C: Print Triangle                                       *
+ *  Week2D: Print 4 Arrows                                       *
+ *  Week2E: Print Rectangles					 *
+ *  Week2F: Formatted printing numbers  			 *
+ *	Calculations						 *
+ *  Week2G: ask user to enter 2 numbers, obtain numbers & print  *
+ *	sum, product, difference, quotient and remainder	 *
+ *  Week2H: ask user to enter 3 numbers, obtain numbers & print  *
+ *	sum, product, difference, quotient and remainder	 *
+ *  Week2I: Reads radius of a circle & prints circle's diameter, *
+ *	circumference and area.  Use the constant value		 *
+ *	3.14159 for Pi.  All calculations should occur		 *
+ *	outside the printf statement(s) and use the		 *
+ * 	formatted conversion %.2f.				 *
+ *								 *
+ *								 *
+ *****************************************************************/
+
+#include "stdafx.h"		//C++ library
+#include<stdio.h>		//C library
+
+//Declare variables
+float Pi = 3.14159;
+float radius;
+float diam;
+float circum;
+float area;
+int first;
+int second;
+int third;
+float _2F = 123.4567890;
+int _2F_ = _2F;
+
+int main(void)
+{
+    //Week 2A: Print picture
+	printf("Week2A: Print picture\n\n");
+	printf("          0           \n");
+	printf("         000          \n");
+	printf("          0~  ~  ~  ~ \n");
+	printf("          0 ~  ~  ~  ~\n");
+	printf("          0          |\n");
+	printf("          0          |\n");
+	printf("          0          |\n");
+	printf("          0~ ~ ~ ~ ~ ~\n");
+	printf("          0 ~ ~ ~ ~ ~ \n");
+	printf("          0           \n");
+	printf("          0           \n");
+	printf("          0           \n");
+	printf("          0           \n");
+	printf("          0           \n");
+	printf("          0           \n");
+	printf("          0           \n");
+	printf("          0           \n");
+	printf("          0           \n");
+	printf("          0           \n");
+	printf("          0           \n");
+	printf("          0           \n");
+	printf("XXXXXXXXXXXXXXXXXXXXXX\n");
+	printf("XXXXXXXXXXXXXXXXXXXXXX\n");
+	printf("XXXXXXXXXXXXXXXXXXXXXX\n");
+	printf("XX   XXXXXXXXXXXX   XX\n");
+	printf("XX   XXXXXXXXXXXX   XX\n");
+	printf("XXXXXXXXXXXXXXXXXXXXXX\n");
+	printf("XXXXXXXXXXX   XXXXXXXX\n");
+	printf("XXXXXXXXXXX   XXXXXXXX\n");
+	printf("XXXXXXXXXXX   XXXXXXXX\n");
+	printf("XXXXXXXXXXXXXXXXXXXXXX\n\n\n");
+	
+	//Week 2B: Print  Numbers 1-4
+	
+	printf("\nPrintf statement with spaces\n");
+	printf("\tPrintf \tstatement \twith \ttabs\n");
+	printf("Printf\n statement\n on four\n lines\n\n");
+
+	//Week 2C: Print Triangle
+	printf("\nPrint a triangle below\n\n");
+	printf("*\n");
+	printf("**\n");
+	printf("***\n");
+	printf("****\n");
+	printf("*****\n");
+	printf("******\n");
+	printf("*******\n");
+	printf("********\n");
+	printf("*********\n");
+	printf("**********\n\n");
+
+	//Week 2D: Print 4 arrows
+	printf("Print 4 arrows\n");
+	printf("         *     *         \n");
+	printf("         **   **         \n");
+	printf("************ ************\n");
+	printf("         **   **         \n");
+	printf("         *     *         \n\n");
+
+	printf("          *          *\n");
+	printf("          *         ***\n");
+	printf("          *        *****\n");
+	printf("          *          *\n");
+	printf("          *          *\n");
+	printf("          *          *\n");
+	printf("        *****        *\n");
+	printf("         ***         *\n");
+	printf("          *          *\n");
+
+	//Week 2E Print Rectangles
+	printf("Print 2 Rectangles\n\n");
+	printf("**********\n");
+	printf("**********\n");
+	printf("**********\n");
+	printf("**********\n\n");
+
+	printf("**********\n");
+	printf("*          *\n");
+	printf("*          *\n");
+	printf("**********\n\n");
+
+	//Week 2F Formatted Printing Numbers
+	printf("Formatted Printing Numbers\n");
+	printf("As an integer, using type casting and I = %i\n",_2F_);
+	printf("1 place  to the right of the decimal = %.1f\n",_2F);
+	printf("2 places to the right of the decimal = %.2f\n",_2F);
+	printf("3 places to the right of the decimal = %.3f\n",_2F);
+	printf("Using G = %g\n",_2F);
+	printf("Using E = %e\n",_2F);
+
+	//CALCUATIONS
+	printf("\n\nCALCULATIONS\n\n");
+
+	//Week 2G: Ask user to enter 2 numbers and  print sum, difference, product, quotient and remainder
+	printf("Ask user to enter 2 numbers and  print sum, difference, product, quotient and remainder\n");
+	printf("Enter first number:");
+	scanf("%i",&first);
+	printf("Enter second number:");
+	scanf("%i",&second);
+
+	printf("\nSum:");
+	printf("%i\n",first+second);
+
+	printf("Difference:");
+	printf("%i\n",first-second);
+
+	printf("Product:");
+	printf("%i\n",first*second);
+
+	printf("Quotient:");
+	printf("%i\n",first/second);
+
+	printf("Remainder:");
+	printf("%i\n",first%second);
+
+	//Week2H: Ask user to enter 3 integers and print sum, difference, product
+	printf("Ask user to enter 3 integers and print sum, difference, product\n");
+	printf("Enter first number:");
+	scanf("%i",&first);
+	printf("Enter second number:");
+	scanf("%i",&second);
+	printf("Enter third number:");
+	scanf("%i",&third);
+
+	printf("\nSum:");
+	printf("%i\n",first+second+third);
+
+	printf("Difference:");
+	printf("%i\n",first-second-third);
+
+	printf("Product:");
+	printf("%i\n",first*second*third);
+
+	//Week2I: reads radius of a circle and prints diamater, circumference and area.
+	printf("Reads the radius of a circle and prints the diamater, circumference and area.\n\n");
+	printf("Enter the radius of the circle:");
+	scanf("%f",&radius);
+
+	circum = (2*Pi*radius);
+	area = (Pi*(radius*radius));
+	diam = (radius*2);
+
+	printf("\nCircumference = %.2f\n",circum);
+	printf("Diamater = %.2f\n",diam);
+	printf("Area = %.2f\n",area);
+
+    return 0;
+}
